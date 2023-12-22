@@ -1,0 +1,922 @@
+@import url(https://fonts.googleapis.com/css?family=Exo+2:200i);
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,700;1,400&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  cursor: cell;
+  background-color: #1a1818;
+  width: 100vw;
+  max-width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.header {
+  margin: 0 auto;
+  height: 90px;
+  width: 100vw;
+  max-width: 100%;
+  background-color: #1a1818;
+  overflow: hidden;
+}
+
+.header-inner {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  z-index: 100;
+}
+
+.logo-mark {
+  margin: 10px 15px 20px 30px;
+  width: 55px;
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: center;
+  cursor: pointer;
+  text-align: left;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 45px;
+  width: 200px;
+  text-align: left;
+  z-index: 100;
+}
+.logo p1 {
+  color: #4b24db;
+}
+.logo p2 {
+  color: #b3db24;
+}
+.logo p3 {
+  color: #db2489;
+}
+.logo p4 {
+  color: #24db61;
+}
+.logo p5 {
+  color: #db9b24;
+}
+.logo p6 {
+  color: #db2442;
+}
+.logo p7 {
+  color: #24c0db;
+}
+.logo p8 {
+  color: #7152e2;
+}
+.logo p9 {
+  color: #24db33;
+}
+
+.header-sns {
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: right;
+  height: 100px;
+  width: 96vw;
+  z-index: 100;
+}
+
+.header-sns ul {
+  position: fixed;
+  width: 180px;
+  font-size: 30px;
+  z-index: 100;
+}
+.header-sns ul a {
+  color: #cfcf33;
+  transition: 0.2s;
+  font-size: 16px;
+}
+.header-sns ul i {
+  letter-spacing: 10px;
+  color: #f8f4f4;
+  cursor: pointer;
+}
+
+.menu {
+  position: fixed;
+  top: 60px;
+  left: 0px;
+  width: 45px;
+  height: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+.menu ul {
+  font-size: 16.5px;
+}
+.menu ul a {
+  writing-mode: vertical-lr;
+  transition: 0.2s;
+}
+.menu ul a:hover {
+  color: rgb(245, 248, 224);
+}
+.menu .custom {
+  background-color: #4b24db;
+  opacity: 20;
+  border-radius: 5px;
+  height: 85px;
+  box-shadow: #7152e2;
+  text-align: center;
+  color: #db2442;
+  font-weight: bold;
+  scroll-behavior: 2s;
+}
+.menu .Nike {
+  background-color: #b3db24;
+  opacity: 20;
+  border-radius: 5px;
+  height: 85px;
+  box-shadow: #7152e2;
+  text-align: center;
+  color: #db9b24;
+  font-weight: bold;
+}
+.menu .adidas {
+  background-color: #db2489;
+  opacity: 20;
+  border-radius: 5px;
+  height: 85px;
+  box-shadow: #7152e2;
+  text-align: center;
+  color: #24db61;
+  font-weight: bold;
+}
+.menu .vans {
+  background-color: #24db61;
+  opacity: 20;
+  border-radius: 5px;
+  height: 85px;
+  box-shadow: #7152e2;
+  text-align: center;
+  color: #db2489;
+  font-weight: bold;
+}
+.menu .converse {
+  background-color: #db9b24;
+  opacity: 20;
+  border-radius: 5px;
+  height: 85px;
+  box-shadow: #7152e2;
+  text-align: center;
+  color: #b3db24;
+  font-weight: bold;
+}
+.menu .contact {
+  background-color: #db2442;
+  opacity: 20;
+  border-radius: 5px;
+  height: 85px;
+  box-shadow: #7152e2;
+  text-align: center;
+  color: #4b24db;
+  font-weight: bold;
+}
+
+.c-sample {
+  height: calc(100vh - 240px);
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+.custom-box1 {
+  background: rgb(255, 255, 255);
+  height: 400px;
+  flex: 0 0 800px;
+  margin: 0 10px 0 30px;
+  border-radius: 10px;
+  position: relative;
+}
+.custom-box1 .custom-img {
+  margin: 0 auto;
+  background-size: 580px;
+  background-position: center;
+  height: 318px;
+  width: 750px;
+}
+.custom-box1 #light {
+  width: 580px;
+  background: url(./main-4/img/img/imgphotograph/adidas_hammock.jpg) no-repeat;
+  background-size: 100% 100%;
+}
+.custom-box1 #light_.on_light {
+  background: url(./main-4/img/img/color_sample/nike_sample/blue.png) no-repeat;
+  background-size: 100% 100%;
+}
+
+.name-text {
+  height: 100px;
+  width: 700px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 60px 0 60px;
+  position: absolute;
+  bottom: 0;
+}
+.name-text p.nike {
+  font-size: 25px;
+  font-weight: bold;
+  color: #f11616;
+  height: 35px;
+  width: 180px;
+  justify-content: center;
+}
+.name-text p.adidas {
+  font-size: 25px;
+  font-weight: bold;
+  color: #1a1818;
+  height: 35px;
+  width: 180px;
+  justify-content: center;
+}
+.name-text p.vans {
+  font-size: 25px;
+  font-weight: bold;
+  color: #1a1818;
+  height: 35px;
+  width: 180px;
+  justify-content: center;
+}
+.name-text p.converse {
+  font-size: 25px;
+  font-weight: bold;
+  color: #1a1818;
+  height: 35px;
+  width: 180px;
+  justify-content: center;
+}
+
+.custom-box2 {
+  background: rgb(191, 219, 113);
+  height: 400px;
+  display: flex;
+  flex: auto;
+  margin-right: 30px;
+  flex-flow: column;
+  justify-content: space-evenly;
+  border-radius: 10px;
+}
+.custom-box2 .custom-img-box1 {
+  height: 100px;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+.custom-box2 .custom-img-box1 .custom-img1 {
+  height: 70px;
+  width: 70px;
+  background-size: 70px;
+  background-position: center;
+}
+.custom-box2 .custom-img-box1 #switch1 {
+  width: 70px;
+  background: url(./main-4/img/img/gorilla/blue_gorilla_right.png) no-repeat;
+  background-size: 100% 100%;
+  cursor: pointer;
+}
+.custom-box2 .custom-img-box1 #on_switch1 {
+  background: url(./main-4/img/img/banana/blue_banana.png) no-repeat;
+  background-size: 100% 100%;
+}
+.custom-box2 .custom-img-box1 .custom-img2 {
+  height: 70px;
+  width: 70px;
+  background: url(./main-4/img/img/gorilla/light_blue_gorilla_right.png) no-repeat;
+  background-size: 70px;
+  background-position: center;
+}
+.custom-box2 .custom-img-box1 .custom-img3 {
+  height: 70px;
+  width: 70px;
+  background: url(./main-4/img/img/gorilla/Green_gori_right.png) no-repeat;
+  background-size: 70px;
+  background-position: center;
+}
+.custom-box2 .custom-img-box1 .custom-img4 {
+  height: 70px;
+  width: 70px;
+  background: url(./main-4/img/img/gorilla/yellow_green_gorilla_right.png) no-repeat;
+  background-size: 70px;
+  background-position: center;
+}
+.custom-box2 .custom-img-box2 {
+  height: 100px;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+.custom-box2 .custom-img-box2 .custom-img5 {
+  height: 70px;
+  width: 70px;
+  background: url(./main-4/img/img/gorilla/Purple_gorilla_right.png) no-repeat;
+  background-size: 70px;
+  background-position: center;
+}
+.custom-box2 .custom-img-box2 .custom-img6 {
+  height: 70px;
+  width: 70px;
+  background: url(./main-4/img/img/gorilla/red_gorilla_right.png) no-repeat;
+  background-size: 70px;
+  background-position: center;
+}
+.custom-box2 .custom-img-box2 .custom-img7 {
+  height: 70px;
+  width: 70px;
+  background: url(./main-4/img/img/gorilla/orange_gorilla_right.png) no-repeat;
+  background-size: 70px;
+  background-position: center;
+}
+.custom-box2 .custom-img-box2 .custom-img8 {
+  height: 70px;
+  width: 70px;
+  background: url(./main-4/img/img/gorilla/yellow_gorilla_right.png) no-repeat;
+  background-size: 70px;
+  background-position: center;
+}
+.custom-box2 .custom-img-box3 {
+  height: 100px;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+.custom-box2 .custom-img-box3 .custom-img9 {
+  height: 70px;
+  width: 70px;
+  background: url(./main-4/img/img/gorilla/brown_gorilla_right.png) no-repeat;
+  background-size: 70px;
+  background-position: center;
+}
+.custom-box2 .custom-img-box3 .custom-img10 {
+  height: 70px;
+  width: 70px;
+  background: url(./main-4/img/img/gorilla/pink_gorilla_right.png) no-repeat;
+  background-size: 70px;
+  background-position: center;
+}
+.custom-box2 .custom-img-box3 .custom-img11 {
+  height: 70px;
+  width: 70px;
+  background: url(./main-4/img/img/gorilla/black_gorilla_right.png) no-repeat;
+  background-size: 70px;
+  background-position: center;
+}
+.custom-box2 .custom-img-box3 .order-button {
+  font-size: 22px;
+  font-weight: bold;
+  color: #1a1818;
+  background-color: rgb(255, 255, 255);
+  height: 41px;
+  width: 79px;
+  text-align: center;
+  border: 3px solid rgba(19, 193, 199, 0.726);
+  box-shadow: 0 5px 0 rgba(19, 193, 199, 0.726);
+  border-radius: 6px;
+  display: inline-block;
+  transition: 0.3s;
+  z-index: 11;
+}
+.custom-box2 .custom-img-box3 .order-button:hover {
+  transform: translateY(5px);
+  box-shadow: 0 0 0 rgba(19, 193, 199, 0.726);
+}
+
+.footer {
+  background: #1a1818;
+  padding: 45px 0 15px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 150px;
+  width: 100vw;
+}
+
+.footer-area {
+  height: 100px;
+  width: 620px;
+}
+.footer-area ul {
+  display: flex;
+  color: rgb(255, 255, 255);
+}
+.footer-area ul li {
+  margin-left: 30px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.footer-area ul li a {
+  color: rgb(255, 255, 255);
+}
+
+.small {
+  bottom: 0;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  margin: 0 auto;
+  margin-top: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}/*# sourceMappingURL=adidascustom.css.map */
+
+
+/* --------------------sp */
+
+
+@media (max-width: 768px){
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+
+  body {
+    cursor: cell;
+    background-color: linear-gradient(90deg, rgb(212, 255, 198) 15%, rgb(184, 255, 160) 33%, rgb(204, 201, 119) 46%, rgb(255, 155, 36) 58%, rgb(19, 22, 105) 75%, rgb(115, 149, 194) 82%, rgb(133, 189, 166) 90%);
+
+    width: 100vw;
+    max-width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  .header {
+    margin: 0 auto;
+    height: 106px;
+    width: 100vw;
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  .header .header-inner {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 106px;
+    z-index: 100;
+  }
+
+  .header-inner .logo-mark {
+    margin: 10px 15px 20px 30px;
+    width: 55px;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center;
+    cursor: pointer;
+    text-align: left;
+    z-index: 100;
+  }
+
+  .header-inner .logo {
+    font-size: 45px;
+    width: 200px;
+    text-align: left;
+    z-index: 100;
+  }
+  .logo p1 {
+    color: #4b24db;
+  }
+  .logo p2 {
+    color: #b3db24;
+  }
+  .logo p3 {
+    color: #db2489;
+  }
+  .logo p4 {
+    color: #24db61;
+  }
+  .logo p5 {
+    color: #db9b24;
+  }
+  .logo p6 {
+    color: #db2442;
+  }
+  .logo p7 {
+    color: #24c0db;
+  }
+  .logo p8 {
+    color: #7152e2;
+  }
+  .logo p9 {
+    color: #24db33;
+  }
+
+  .header-sns {
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: right;
+    height: 106px;
+    width: 96vw;
+    z-index: 100;
+  }
+
+  .header-sns ul {
+    position: fixed;
+    width: 180px;
+    font-size: 30px;
+    z-index: 100;
+  }
+  .header-sns ul a {
+    color: #cfcf33;
+    transition: 0.2s;
+    font-size: 16px;
+  }
+  .header-sns ul i {
+    letter-spacing: 10px;
+    color: #f8f4f4;
+    cursor: pointer;
+  }
+
+  .menu {
+    position: fixed;
+    top: 21px;
+    left: 0px;
+    width: 45px;
+    height: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+  }
+  .menu ul {
+    font-size: 11.5px;
+  }
+  .menu ul a {
+    writing-mode: vertical-lr;
+    transition: 0.2s;
+  }
+  .menu ul a:hover {
+    color: rgb(245, 248, 224);
+  }
+  .menu .custom {
+    background-color: #4b24db;
+    opacity: 20;
+    border-radius: 5px;
+    height: 65px;
+    box-shadow: #7152e2;
+    text-align: center;
+    color: #db2442;
+    font-weight: bold;
+    scroll-behavior: 2s;
+  }
+  .menu .Nike {
+    background-color: #b3db24;
+    opacity: 20;
+    border-radius: 5px;
+    height: 65px;
+    box-shadow: #7152e2;
+    text-align: center;
+    color: #db9b24;
+    font-weight: bold;
+  }
+  .menu .adidas {
+    background-color: #db2489;
+    opacity: 20;
+    border-radius: 5px;
+    height: 65px;
+    box-shadow: #7152e2;
+    text-align: center;
+    color: #24db61;
+    font-weight: bold;
+  }
+  .menu .vans {
+    background-color: #24db61;
+    opacity: 20;
+    border-radius: 5px;
+    height: 65px;
+    box-shadow: #7152e2;
+    text-align: center;
+    color: #db2489;
+    font-weight: bold;
+  }
+  .menu .converse {
+    background-color: #db9b24;
+    opacity: 20;
+    border-radius: 5px;
+    height: 65px;
+    box-shadow: #7152e2;
+    text-align: center;
+    color: #b3db24;
+    font-weight: bold;
+  }
+  .menu .contact {
+    background-color: #db2442;
+    opacity: 20;
+    border-radius: 5px;
+    height: 65px;
+    box-shadow: #7152e2;
+    text-align: center;
+    color: #4b24db;
+    font-weight: bold;
+  }
+
+  .c-sample {
+    height: 100vh;
+    margin: 0px 0 0 138px;
+    width: 56vw;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    padding: 15px;
+  }
+
+  .c-sample .custom-box1 {
+    background: rgb(255, 255, 255);
+    margin: 0px 3px 0 96px;
+    border-radius: 10px;
+    padding: 0 0 0 0 ;
+    height: 10vh;
+    width: 90vw;
+  }
+  .custom-box1 .custom-img {
+    background: url(./main-4/img/img/imgphotograph/adidas_hammock.jpg) no-repeat;
+    background-size: 580px;
+    background-position: 1px 1px ;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .name-text {
+    height: 100px;
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 60px 0 60px;
+    position: absolute;
+    bottom: 0;
+  }
+  .name-text p.nike {
+    font-size: 25px;
+    font-weight: bold;
+    color: #f11616;
+    height: 35px;
+    width: 180px;
+    justify-content: center;
+  }
+  .name-text p.adidas {
+    font-size: 25px;
+    font-weight: bold;
+    color: #1a1818;
+    height: 35px;
+    width: 180px;
+    justify-content: center;
+  }
+  .name-text p.vans {
+    font-size: 25px;
+    font-weight: bold;
+    color: #1a1818;
+    height: 35px;
+    width: 180px;
+    justify-content: center;
+  }
+  .name-text p.converse {
+    font-size: 25px;
+    font-weight: bold;
+    color: #1a1818;
+    height: 35px;
+    width: 180px;
+    justify-content: center;
+  }
+
+  .custom-box2 {
+    background: rgb(191, 219, 113);
+    background-size: 10px 20px;
+    width: 91vw;
+    display: flex;
+    margin-left: 30px;
+    flex-flow: column;
+    justify-content: space-evenly;
+    margin: 20px 0 0 96px;
+    border-radius: 10px;
+  }
+  .custom-box2 .custom-img-box1 {
+    height: 100px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .custom-box2 .custom-img-box1 .custom-img1 {
+    height: 70px;
+    width: 70px;
+    background-size: 70px;
+    background-position: center;
+  }
+  .custom-box2 .custom-img-box1 #switch1 {
+    width: 70px;
+    background: url(./main-4/img/img/gorilla/blue_gorilla_right.png) no-repeat;
+    background-size: 100% 100%;
+    cursor: pointer;
+  }
+  .custom-box2 .custom-img-box1 #on_switch1 {
+    background: url(./main-4/img/img/banana/blue_banana.png) no-repeat;
+    background-size: 100% 100%;
+  }
+  .custom-box2 .custom-img-box1 .custom-img2 {
+    height: 70px;
+    width: 70px;
+    background: url(./main-4/img/img/gorilla/light_blue_gorilla_right.png) no-repeat;
+    background-size: 70px;
+    background-position: center;
+  }
+  .custom-box2 .custom-img-box1 .custom-img3 {
+    height: 70px;
+    width: 70px;
+    background: url(./main-4/img/img/gorilla/Green_gori_right.png) no-repeat;
+    background-size: 70px;
+    background-position: center;
+  }
+  .custom-box2 .custom-img-box1 .custom-img4 {
+    height: 70px;
+    width: 70px;
+    background: url(./main-4/img/img/gorilla/yellow_green_gorilla_right.png) no-repeat;
+    background-size: 70px;
+    background-position: center;
+  }
+  .custom-box2 .custom-img-box2 {
+    height: 100px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .custom-box2 .custom-img-box2 .custom-img5 {
+    height: 70px;
+    width: 70px;
+    background: url(./main-4/img/img/gorilla/Purple_gorilla_right.png) no-repeat;
+    background-size: 70px;
+    background-position: center;
+  }
+  .custom-box2 .custom-img-box2 .custom-img6 {
+    height: 70px;
+    width: 70px;
+    background: url(./main-4/img/img/gorilla/red_gorilla_right.png) no-repeat;
+    background-size: 70px;
+    background-position: center;
+  }
+  .custom-box2 .custom-img-box2 .custom-img7 {
+    height: 70px;
+    width: 70px;
+    background: url(./main-4/img/img/gorilla/orange_gorilla_right.png) no-repeat;
+    background-size: 70px;
+    background-position: center;
+  }
+  .custom-box2 .custom-img-box2 .custom-img8 {
+    height: 70px;
+    width: 70px;
+    background: url(./main-4/img/img/gorilla/yellow_gorilla_right.png) no-repeat;
+    background-size: 70px;
+    background-position: center;
+  }
+  .custom-box2 .custom-img-box3 {
+    height: 100px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .custom-box2 .custom-img-box3 .custom-img9 {
+    height: 70px;
+    width: 70px;
+    background: url(./main-4/img/img/gorilla/brown_gorilla_right.png) no-repeat;
+    background-size: 70px;
+    background-position: center;
+  }
+  .custom-box2 .custom-img-box3 .custom-img10 {
+    height: 70px;
+    width: 70px;
+    background: url(./main-4/img/img/gorilla/pink_gorilla_right.png) no-repeat;
+    background-size: 70px;
+    background-position: center;
+  }
+  .custom-box2 .custom-img-box3 .custom-img11 {
+    height: 70px;
+    width: 70px;
+    background: url(./main-4/img/img/gorilla/black_gorilla_right.png) no-repeat;
+    background-size: 70px;
+    background-position: center;
+  }
+  .custom-box2 .custom-img-box3 .order-button {
+    font-size: 22px;
+    font-weight: bold;
+    color: #1a1818;
+    background-color: rgb(255, 255, 255);
+    height: 41px;
+    width: 79px;
+    text-align: center;
+    border: 3px solid rgba(19, 193, 199, 0.726);
+    box-shadow: 0 5px 0 rgba(19, 193, 199, 0.726);
+    border-radius: 6px;
+    display: inline-block;
+    transition: 0.3s;
+    z-index: 11;
+  }
+  .custom-box2 .custom-img-box3 .order-button:hover {
+    transform: translateY(5px);
+    box-shadow: 0 0 0 rgba(19, 193, 199, 0.726);
+  }
+
+  .footer {
+    background: #1a1818;
+    padding: 45px 0 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 150px;
+    width: 100vw;
+  }
+
+  .footer-area {
+    height: 100px;
+    width: 620px;
+  }
+  .footer-area ul {
+    display: flex;
+    color: rgb(255, 255, 255);
+  }
+  .footer-area ul li {
+    margin-left: 30px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .footer-area ul li a {
+    color: rgb(255, 255, 255);
+  }
+
+  .small {
+    bottom: 0;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+}

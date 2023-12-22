@@ -1,0 +1,601 @@
+@charset "utf-8";
+
+$mainColor:#1a1818;
+$mainFontColor:rgb(255, 255, 255);
+$borderColor:rgba(19, 193, 199, 0.726);
+
+@mixin button-box{
+  font-size: 22px;
+  font-weight: bold;
+  color: $mainColor;
+  background-color: $mainFontColor;
+  height: 41px;
+  width: 79px;
+  text-align: center;
+  border: 3px solid $borderColor;
+  box-shadow: 0 5px 0 $borderColor;
+  border-radius: 6px;
+  display: inline-block;
+  transition: .3s;
+  z-index: 11;
+    &:hover {
+    transform: translateY(5px);
+    box-shadow: 0 0 0 $borderColor;
+    }
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Exo+2:200i);
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,700;1,400&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+
+body {
+  cursor: cell;
+  background-color: $mainColor;
+  width: 100vw;
+  max-width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+img{
+  max-width: 100%;
+}
+
+
+
+// ----------header----------
+
+.header{
+  margin: 0 auto;
+  height: 90px;
+  width: 100vw;
+  max-width: 100%;
+  background-color: $mainColor;
+  overflow: hidden;
+}
+
+.header-inner{
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  z-index: 100;
+}
+
+.logo-mark {
+  margin: 10px 15px 20px 30px;
+  width: 55px;
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: center;
+  cursor: pointer;
+  text-align: left;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 45px;
+  width: 200px;
+  text-align: left;
+  z-index: 100;
+
+  p1 {
+    color: #4b24db;
+  }
+
+
+  p2 {
+    color: #b3db24;
+  }
+
+
+  p3 {
+    color: #db2489;
+  }
+
+
+  p4 {
+    color: #24db61;
+  }
+
+
+  p5 {
+    color: #db9b24;
+  }
+
+
+  p6 {
+    color: #db2442;
+  }
+
+
+  p7 {
+    color: #24c0db;
+  }
+
+
+  p8 {
+    color: #7152e2;
+  }
+
+
+  p9 {
+    color: #24db33;
+  }
+}
+
+.header-sns{
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: right;
+  height: 100px;
+  width: 96vw;
+  z-index: 100;
+}
+
+.header-sns ul {
+  position: fixed;
+  width: 180px;
+  font-size: 30px;
+  z-index: 100;
+
+  a {
+    color: #cfcf33;
+    transition: 0.2s;
+    font-size: 16px;
+  }
+
+  i {
+    letter-spacing: 10px;
+    color: #f8f4f4;
+    cursor: pointer;
+  }
+}
+
+.menu {
+  position: fixed;
+  top: 60px;
+  left: 0px;
+  width: 45px;
+  height: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+
+
+  ul {
+    font-size: 16.5px;
+
+
+
+    a {
+      writing-mode: vertical-lr;
+      transition: 0.2s;
+
+      &:hover {
+        color: rgb(245, 248, 224);
+      }
+    }
+  }
+
+  .custom {
+    background-color: #4b24db;
+    opacity: 20;
+    border-radius: 5px;
+    height: 85px;
+    box-shadow: #7152e2;
+    text-align: center;
+    color: #db2442;
+    font-weight: bold;
+    scroll-behavior: 2s;
+  }
+
+
+
+
+  .Nike {
+    background-color: #b3db24;
+    opacity: 20;
+    border-radius: 5px;
+    height: 85px;
+    box-shadow: #7152e2;
+    text-align: center;
+    color: #db9b24;
+    font-weight: bold;
+  }
+
+
+
+
+  .adidas {
+    background-color: #db2489;
+    opacity: 20;
+    border-radius: 5px;
+    height: 85px;
+    box-shadow: #7152e2;
+    text-align: center;
+    color: #24db61;
+    font-weight: bold;
+  }
+
+
+
+
+  .vans {
+    background-color: #24db61;
+    opacity: 20;
+    border-radius: 5px;
+    height: 85px;
+    box-shadow: #7152e2;
+    text-align: center;
+    color: #db2489;
+    font-weight: bold;
+  }
+
+
+
+
+  .converse {
+    background-color: #db9b24;
+    opacity: 20;
+    border-radius: 5px;
+    height: 85px;
+    box-shadow: #7152e2;
+    text-align: center;
+    color: #b3db24;
+    font-weight: bold;
+  }
+
+
+
+
+  .contact {
+    background-color: #db2442;
+    opacity: 20;
+    border-radius: 5px;
+    height: 85px;
+    box-shadow: #7152e2;
+    text-align: center;
+    color: #4b24db;
+    font-weight: bold;
+  }
+}
+
+// ----------main----------
+// ----------first-vew----------
+.c-sample{
+  height: calc(100vh - 240px);
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 15px;
+}
+.custom-box1{
+  background: $mainFontColor;
+  height: 400px;
+  flex: 0 0 800px;
+  margin: 0 10px 0 30px;
+  border-radius: 10px;
+  position: relative;
+  .custom-img {
+    margin: 0 auto;
+    background-size: 580px;
+    background-position: center;
+    height: 318px;
+    width: 750px;
+    }
+    #light{
+      width: 580px;
+      background: url(./main-4/img/img/imgphotograph/adidas_hammock.jpg) no-repeat;
+      background-size: 100% 100%;
+        &_.on_light{
+          background: url(./main-4/img/img/color_sample/nike_sample/blue.png) no-repeat;
+          background-size: 100% 100%;
+        }
+    }
+}
+    
+    
+  .name-text{
+    height: 100px;
+    width: 700px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 60px 0 60px;
+    position: absolute;
+    bottom: 0;
+    p {
+      &.nike {
+        font-size: 25px;
+        font-weight: bold;
+        color: #f11616;
+        height: 35px;
+        width: 180px;
+        justify-content: center;
+        // z-index: 1;
+      }
+      &.adidas {
+        font-size: 25px;
+        font-weight: bold;
+        color: $mainColor;
+        height: 35px;
+        width: 180px;
+        justify-content: center;
+        // z-index: 1;
+      }
+        &.vans {
+        font-size: 25px;
+        font-weight: bold;
+        color: $mainColor;
+        height: 35px;
+        width: 180px;
+        justify-content: center;
+        // z-index: 1;
+      }
+      &.converse {
+        font-size: 25px;
+        font-weight: bold;
+        color: $mainColor;
+        height: 35px;
+        width: 180px;
+        justify-content: center;
+        // z-index: 1;
+      }
+    }
+  }
+
+.custom-box2{
+  background: rgb(191, 219, 113);
+  height: 400px;
+  display: flex;
+  flex: auto;
+  margin-right: 30px;
+  flex-flow: column;
+  justify-content:space-evenly;
+  border-radius: 10px;
+  .custom-img-box1{
+    height: 100px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    .custom-img1  {
+      height: 70px;
+      width: 70px;
+      background-size: 70px;
+      background-position: center;
+    }
+    #switch1{
+      width: 70px;
+      background: url(./main-4/img/img/gorilla/blue_gorilla_right.png) no-repeat;
+      background-size: 100% 100%;
+      cursor: pointer;
+    }
+    #on_switch1{
+      background: url(./main-4/img/img/banana/blue_banana.png) no-repeat;
+      background-size: 100% 100%;
+    }
+    .custom-img2  {
+      height: 70px;
+      width: 70px;
+      background:url(./main-4/img/img/gorilla/light_blue_gorilla_right.png)no-repeat ;
+      background-size: 70px;
+      background-position: center;
+    }
+    .custom-img3  {
+      height: 70px;
+      width: 70px;
+      background:url(./main-4/img/img/gorilla/Green_gori_right.png)no-repeat ;
+      background-size: 70px;
+      background-position: center;
+    }
+    .custom-img4 {
+      height: 70px;
+      width: 70px;
+      background:url(./main-4/img/img/gorilla/yellow_green_gorilla_right.png)no-repeat ;
+      background-size: 70px;
+      background-position: center;
+    }
+  }
+  
+  
+  .custom-img-box2{
+    height: 100px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    .custom-img5 {
+      height: 70px;
+      width: 70px;
+      background:url(./main-4/img/img/gorilla/Purple_gorilla_right.png)no-repeat ;
+      background-size: 70px;
+      background-position: center;
+    }
+    .custom-img6  {
+      height: 70px;
+      width: 70px;
+      background:url(./main-4/img/img/gorilla/red_gorilla_right.png)no-repeat ;
+      background-size: 70px;
+      background-position: center;
+    }
+    .custom-img7  {
+      height: 70px;
+      width: 70px;
+      background:url(./main-4/img/img/gorilla/orange_gorilla_right.png)no-repeat ;
+      background-size: 70px;
+      background-position: center;
+    }
+    .custom-img8  {
+      height: 70px;
+      width: 70px;
+      background:url(./main-4/img/img/gorilla/yellow_gorilla_right.png)no-repeat ;
+      background-size: 70px;
+      background-position: center;
+    }
+  }
+  .custom-img-box3{
+    height: 100px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    .custom-img9  {
+      height: 70px;
+      width: 70px;
+      background:url(./main-4/img/img/gorilla/brown_gorilla_right.png)no-repeat ;
+      background-size: 70px;
+      background-position: center;
+    }
+    .custom-img10  {
+      height: 70px;
+      width: 70px;
+      background:url(./main-4/img/img/gorilla/pink_gorilla_right.png)no-repeat ;
+      background-size: 70px;
+      background-position: center;
+    }
+    .custom-img11  {
+      height: 70px;
+      width: 70px;
+      background:url(./main-4/img/img/gorilla/black_gorilla_right.png)no-repeat ;
+      background-size: 70px;
+      background-position: center;
+    }
+    .order-button {
+      @include button-box;
+    }
+  }
+}
+
+
+// ----------footer ----------
+.footer {
+  background: $mainColor;
+  padding: 45px 0 15px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 150px;
+  width: 100vw;  
+}
+
+
+
+
+  .footer-area{
+    height: 100px;
+    width: 620px;
+    ul{
+      display: flex;
+      color: $mainFontColor;
+        li{
+          margin-left: 30px;
+          font-size: 20px;
+          font-weight: bold;
+            a{
+              color: $mainFontColor;
+            }
+        }
+    }
+  }
+
+  .small{
+    bottom: 0;
+    font-weight: bold;
+    color: $mainFontColor;
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+// @media (max-width: 640px) {
+// //   .showcase,
+// //   .showcase header {
+// //     padding: 100% 5px;
+// //     top: 0;
+// //   }
+// //   .logo {
+// //     position: absolute;
+// //     font-size: 25px;
+// //     top: 0;
+// //     left: 10px;
+// //     display: flex;
+// //     align-items: center;
+// //     justify-content: left;
+// //     width: 100%;
+// //     padding: 40px 100px;
+// //     z-index: 1000;
+// //   }
+// //   .logo-mark {
+// //     position: absolute;
+// //     top: 20px;
+// //     left: 20px;
+// //     width: 10px;
+// //     height: 10px;
+// //     background-repeat: no-repeat;
+// //     background-size: 20px;
+// //     background-position: center;
+// //     cursor: pointer;
+// //     z-index: 20;
+// //   }
+// //   /* footer */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// // .footer ul a {
+// //   font-size: 15px;
+// // }
+// // .footer ul small {
+// //   font-size: 15px;
+// // }
+
+
+
+
+
+
+// }
+

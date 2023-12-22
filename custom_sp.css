@@ -1,0 +1,2180 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Exo+2:200i);
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,700;1,400&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  cursor: cell;
+  background-color: #1a1818;
+  width: 390px;
+  max-width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  font-size: 25px;
+}
+
+h2 {
+  font-size: 22px;
+}
+
+@media (max-width: 390px) {
+  .header {
+    margin: 0 auto;
+    height: 100px;
+    width: 100%;
+    max-width: 100%;
+    background-color: #1a1818;
+    overflow: hidden;
+  }
+  .header-inner {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    z-index: 100;
+  }
+  .logo-mark {
+    margin: 10px 15px 20px 30px;
+    width: 10%;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center;
+    cursor: pointer;
+    text-align: left;
+    z-index: 100;
+  }
+  .logo {
+    font-size: 25px;
+    width: 200px;
+    text-align: left;
+    z-index: 100;
+  }
+  .logo p1 {
+    color: #4b24db;
+  }
+  .logo p2 {
+    color: #b3db24;
+  }
+  .logo p3 {
+    color: #db2489;
+  }
+  .logo p4 {
+    color: #24db61;
+  }
+  .logo p5 {
+    color: #db9b24;
+  }
+  .logo p6 {
+    color: #db2442;
+  }
+  .logo p7 {
+    color: #24c0db;
+  }
+  .logo p8 {
+    color: #7152e2;
+  }
+  .logo p9 {
+    color: #24db33;
+  }
+  .header-sns {
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    height: 6%;
+    width: 100%;
+    bottom: 4%;
+    left: 0;
+    margin: 0 auto;
+    z-index: 100;
+  }
+  .header-sns ul {
+    position: fixed;
+    width: 180px;
+    font-size: 24px;
+    z-index: 100;
+  }
+  .header-sns ul a {
+    color: #cfcf33;
+    transition: 0.2s;
+    font-size: 16px;
+  }
+  .header-sns ul i {
+    letter-spacing: 10px;
+    color: #f8f4f4;
+    cursor: pointer;
+  }
+  .menu {
+    position: fixed;
+    top: 42px;
+    left: 0px;
+    width: 35px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+  }
+  .menu ul {
+    font-size: 16.5px;
+  }
+  .menu ul a {
+    writing-mode: vertical-lr;
+    transition: 0.2s;
+  }
+  .menu ul a:hover {
+    color: rgb(245, 248, 224);
+  }
+  .menu .custom {
+    background-color: #4b24db;
+    opacity: 20;
+    border-radius: 5px;
+    height: 77px;
+    box-shadow: #7152e2;
+    text-align: center;
+    color: #db2442;
+    font-weight: bold;
+    scroll-behavior: 2s;
+  }
+  .menu .Nike {
+    background-color: #b3db24;
+    opacity: 20;
+    border-radius: 5px;
+    height: 77px;
+    box-shadow: #7152e2;
+    text-align: center;
+    color: #db9b24;
+    font-weight: bold;
+  }
+  .menu .adidas {
+    background-color: #db2489;
+    opacity: 20;
+    border-radius: 5px;
+    height: 77px;
+    box-shadow: #7152e2;
+    text-align: center;
+    color: #24db61;
+    font-weight: bold;
+  }
+  .menu .vans {
+    background-color: #24db61;
+    opacity: 20;
+    border-radius: 5px;
+    height: 77px;
+    box-shadow: #7152e2;
+    text-align: center;
+    color: #db2489;
+    font-weight: bold;
+  }
+  .menu .converse {
+    background-color: #db9b24;
+    opacity: 20;
+    border-radius: 5px;
+    height: 77px;
+    box-shadow: #7152e2;
+    text-align: center;
+    color: #b3db24;
+    font-weight: bold;
+  }
+  .menu .contact {
+    background-color: #db2442;
+    opacity: 20;
+    border-radius: 5px;
+    height: 77px;
+    box-shadow: #7152e2;
+    text-align: center;
+    color: #4b24db;
+    font-weight: bold;
+  }
+  .first-vew {
+    height: calc(35vh + 100px);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    max-width: 100%;
+    position: absolute;
+  }
+  .first-vew-mov {
+    width: 100vw;
+    max-width: 100%;
+  }
+  .bg-mov {
+    max-width: 100%;
+    width: 100%;
+    height: 50vh;
+    background-size: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
+    z-index: 10;
+  }
+  .first-vew-text {
+    height: 231px;
+    width: 100%;
+    max-width: 100%;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    display: flex;
+    position: absolute;
+    top: -20px;
+    left: 0px;
+    z-index: 10;
+  }
+  .first-vew-text h1 {
+    width: 370px;
+    max-width: 100%;
+    margin: 0 0 0 42px;
+    line-height: 38px;
+  }
+  .first-vew-text h2 {
+    position: absolute;
+    top: 131px;
+    left: 129px;
+    width: 241px;
+    color: rgb(255, 255, 255);
+  }
+  .search {
+    margin-top: 50vh;
+    height: 80vh;
+    width: 100vw;
+    position: relative;
+    z-index: 1;
+  }
+  .search-text {
+    position: absolute;
+    top: 0px;
+    height: 20vh;
+    width: 100vw;
+  }
+  .search-text h2 {
+    position: absolute;
+    top: 10px;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+  }
+  .search-text2 {
+    position: absolute;
+    top: 58px;
+    margin: 0 auto;
+    height: 32vh;
+    width: 100vw;
+  }
+  .search-text2 p {
+    font-size: 13px;
+    line-height: 1.5;
+    height: 76px;
+    width: 100vw;
+    margin: 0 44px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+  }
+  .search-link-button-area {
+    position: relative;
+    height: 401px;
+    width: 100vw;
+    position: absolute;
+    top: 109px;
+    left: 0px;
+    color: #1a1818;
+    z-index: 1;
+  }
+  .search-link-button-area p.nike {
+    position: absolute;
+    top: 55px;
+    left: 82px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #f11616;
+    height: 35px;
+    width: 60px;
+    justify-content: center;
+  }
+  .search-link-button-area p.adidas {
+    position: absolute;
+    top: 55px;
+    left: 129px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #1b1a1a;
+    height: 35px;
+    width: 60px;
+    justify-content: center;
+  }
+  .search-link-button-area p.vans {
+    position: absolute;
+    top: 55px;
+    left: 198px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #1b1a1a;
+    height: 35px;
+    width: 60px;
+    justify-content: center;
+  }
+  .search-link-button-area p.converse {
+    position: absolute;
+    top: 55px;
+    left: 248px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #1b1a1a;
+    height: 35px;
+    width: 60px;
+    justify-content: center;
+  }
+  .search-link-button-area .search-link-button {
+    top: 337px;
+    left: 224px;
+    position: absolute;
+    font-size: 15px;
+    font-weight: bold;
+    color: #1a1818;
+    background-color: rgb(255, 255, 255);
+    height: 45px;
+    width: 100px;
+    padding: 5px 20px;
+    text-align: center;
+    border: 3px solid rgba(19, 193, 199, 0.726);
+    box-shadow: 0 5px 0 rgba(19, 193, 199, 0.726);
+    border-radius: 6px;
+    display: inline-block;
+    transition: 0.3s;
+    z-index: 11;
+  }
+  .search-link-button-area .search-link-button:hover {
+    transform: translateY(5px);
+    box-shadow: 0 0 0 rgba(19, 193, 199, 0.726);
+  }
+  .search-link-button-area .custom-img img {
+    position: absolute;
+    width: 94%;
+    top: 0px;
+    left: 21px;
+  }
+  .search-link-button-area .custom-img1 img {
+    position: absolute;
+    width: 183px;
+    top: 69px;
+    left: 110px;
+  }
+  .search-link-button-area .custom-img2 img {
+    position: absolute;
+    width: 40px;
+    top: 181px;
+    left: 136px;
+  }
+  .search-link-button-area .custom-img3 img {
+    position: absolute;
+    width: 40px;
+    top: 149px;
+    left: 136px;
+    transform: scale(-1, 1);
+    /*画像反転*/
+  }
+  .search-link-button-area .custom-img4 img {
+    position: absolute;
+    width: 40px;
+    top: 181px;
+    left: 185px;
+  }
+  .search-link-button-area .custom-img5 img {
+    position: absolute;
+    width: 40px;
+    top: 149px;
+    left: 185px;
+  }
+  .search-link-button-area .custom-img6 img {
+    position: absolute;
+    width: 40px;
+    top: 181px;
+    left: 240px;
+  }
+  .search-link-button-area .custom-img7 img {
+    position: absolute;
+    width: 40px;
+    top: 149px;
+    left: 86px;
+  }
+  .search-link-button-area .custom-img8 img {
+    position: absolute;
+    width: 40px;
+    top: 149px;
+    left: 240px;
+  }
+  .search-link-button-area .custom-img9 img {
+    position: absolute;
+    width: 40px;
+    top: 181px;
+    left: 86px;
+  }
+  .custom-img-box {
+    position: absolute;
+    top: 44px;
+    left: 67px;
+    height: 195px;
+    width: 269px;
+    background-color: #f8eeee;
+  }
+  .Underlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(32, 31, 31, 0.8352941176);
+    height: 242vh;
+    width: 1200px;
+  }
+  .guidance {
+    position: sticky;
+    top: 60px;
+    left: 0;
+    height: 55vh;
+    width: 100vw;
+    max-width: 100%;
+    z-index: -300;
+  }
+  .guidance .guidance-img {
+    position: absolute;
+    width: 100vw;
+    height: 725px;
+    display: block;
+    top: -120px;
+    left: 0;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .guidance .guidance-text {
+    position: absolute;
+    top: 0px;
+    width: 100vw;
+    height: 50vh;
+    margin: 0 auto;
+  }
+  .guidance .guidance-text h2 {
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin: 80px 0 0 44px;
+    height: 100px;
+    width: 301px;
+    text-align: left;
+    z-index: -300;
+  }
+  .guidance .guidance-text p {
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding: 0 77px;
+    height: 172px;
+    width: 387px;
+    text-align: left;
+    z-index: -300;
+  }
+  .introduction {
+    overflow: hidden;
+    height: 198vh;
+    width: 100vw;
+    background-color: #1a1818;
+    position: relative;
+  }
+  .introduction-text {
+    font-weight: bold;
+    font-size: 2.5rem;
+    color: whitesmoke;
+    margin: 0px 38px;
+    display: flex;
+    justify-content: center;
+    line-height: 1;
+    z-index: 10;
+  }
+  .bg-catch1 {
+    font-weight: bold;
+    text-align: left;
+    font-size: 25px;
+    overflow: hidden;
+    display: flex;
+    white-space: nowrap;
+    width: 1550px;
+    height: 38px;
+    color: rgba(0, 0, 0, 0);
+    animation: loop1 40s linear infinite;
+  }
+  .bg-catch1-1 {
+    font-weight: bold;
+    text-align: left;
+    font-size: 25px;
+    overflow: hidden;
+    display: flex;
+    white-space: nowrap;
+    width: 1550px;
+    height: 38px;
+    color: rgba(0, 0, 0, 0);
+    margin: -38px 0 0 0;
+    animation: loop1 40s -20s linear infinite;
+  }
+  .bg-catch2 {
+    font-weight: bold;
+    text-align: left;
+    font-size: 25px;
+    overflow: hidden;
+    display: flex;
+    white-space: nowrap;
+    width: 1550px;
+    height: 38px;
+    color: rgba(0, 0, 0, 0);
+    animation: loop1 30s linear infinite;
+  }
+  .bg-catch2-1 {
+    font-weight: bold;
+    text-align: left;
+    font-size: 25px;
+    overflow: hidden;
+    display: flex;
+    white-space: nowrap;
+    width: 1550px;
+    height: 38px;
+    color: rgba(0, 0, 0, 0);
+    margin: -38px 0 0 0;
+    animation: loop1 30s -15s linear infinite;
+  }
+  .bg-catch3 {
+    font-weight: bold;
+    text-align: left;
+    font-size: 25px;
+    overflow: hidden;
+    display: flex;
+    white-space: nowrap;
+    width: 1550px;
+    height: 38px;
+    color: rgba(0, 0, 0, 0);
+    animation: loop1 34s linear infinite;
+  }
+  .bg-catch3-1 {
+    font-weight: bold;
+    text-align: left;
+    font-size: 25px;
+    overflow: hidden;
+    display: flex;
+    white-space: nowrap;
+    width: 1550px;
+    height: 38px;
+    color: rgba(0, 0, 0, 0);
+    margin: -38px 0 0 0;
+    animation: loop1 34s -17s linear infinite;
+  }
+  .bg-catch4 {
+    font-weight: bold;
+    text-align: left;
+    font-size: 25px;
+    overflow: hidden;
+    display: flex;
+    white-space: nowrap;
+    width: 1550px;
+    height: 38px;
+    color: rgba(0, 0, 0, 0);
+    animation: loop1 44s linear infinite;
+  }
+  .bg-catch4-1 {
+    font-weight: bold;
+    text-align: left;
+    font-size: 25px;
+    overflow: hidden;
+    display: flex;
+    white-space: nowrap;
+    width: 1550px;
+    height: 38px;
+    color: rgba(0, 0, 0, 0);
+    margin: -38px 0 0 0;
+    animation: loop1 44s -22s linear infinite;
+  }
+  .bg-catch5 {
+    font-weight: bold;
+    text-align: left;
+    font-size: 25px;
+    overflow: hidden;
+    display: flex;
+    white-space: nowrap;
+    width: 1550px;
+    height: 38px;
+    color: rgba(0, 0, 0, 0);
+    animation: loop1 28s linear infinite;
+  }
+  .bg-catch5-1 {
+    font-weight: bold;
+    text-align: left;
+    font-size: 25px;
+    overflow: hidden;
+    display: flex;
+    white-space: nowrap;
+    width: 1550px;
+    height: 38px;
+    color: rgba(0, 0, 0, 0);
+    margin: -38px 0 0 0;
+    animation: loop1 28s -14s linear infinite;
+  }
+  .bg-catch6 {
+    font-weight: bold;
+    text-align: left;
+    font-size: 25px;
+    overflow: hidden;
+    display: flex;
+    white-space: nowrap;
+    width: 1550px;
+    height: 38px;
+    color: rgba(0, 0, 0, 0);
+    animation: loop1 50s linear infinite;
+  }
+  .bg-catch6-1 {
+    font-weight: bold;
+    text-align: left;
+    font-size: 25px;
+    overflow: hidden;
+    display: flex;
+    white-space: nowrap;
+    width: 1550px;
+    height: 38px;
+    color: rgba(0, 0, 0, 0);
+    margin: -38px 0 0 0;
+    animation: loop1 50s -25s linear infinite;
+  }
+  .bg-catch7 {
+    font-weight: bold;
+    text-align: left;
+    font-size: 25px;
+    overflow: hidden;
+    display: flex;
+    white-space: nowrap;
+    width: 1550px;
+    height: 38px;
+    color: rgba(0, 0, 0, 0);
+    animation: loop1 48s linear infinite;
+  }
+  .bg-catch7-1 {
+    font-weight: bold;
+    text-align: left;
+    font-size: 25px;
+    overflow: hidden;
+    display: flex;
+    white-space: nowrap;
+    width: 1550px;
+    height: 38px;
+    color: rgba(0, 0, 0, 0);
+    margin: -38px 0 0 0;
+    animation: loop1 48s -24s linear infinite;
+  }
+  .bg-catch8 {
+    font-weight: bold;
+    text-align: left;
+    font-size: 25px;
+    overflow: hidden;
+    display: flex;
+    white-space: nowrap;
+    width: 1550px;
+    height: 38px;
+    color: rgba(0, 0, 0, 0);
+    animation: loop1 36s linear infinite;
+  }
+  .bg-catch8-1 {
+    font-weight: bold;
+    text-align: left;
+    font-size: 25px;
+    overflow: hidden;
+    display: flex;
+    white-space: nowrap;
+    width: 1550px;
+    height: 38px;
+    color: rgba(0, 0, 0, 0);
+    margin: -38px 0 0 0;
+    animation: loop1 36s -18s linear infinite;
+  }
+  .bg-catch9 {
+    font-weight: bold;
+    text-align: left;
+    font-size: 25px;
+    overflow: hidden;
+    display: flex;
+    white-space: nowrap;
+    width: 1550px;
+    height: 38px;
+    color: rgba(0, 0, 0, 0);
+    animation: loop1 30s linear infinite;
+  }
+  .bg-catch9-1 {
+    font-weight: bold;
+    text-align: left;
+    font-size: 25px;
+    overflow: hidden;
+    display: flex;
+    white-space: nowrap;
+    width: 1550px;
+    height: 38px;
+    color: rgba(0, 0, 0, 0);
+    margin: -38px 0 0 0;
+    animation: loop1 30s -15s linear infinite;
+  }
+  .bg-catch10 {
+    font-weight: bold;
+    text-align: left;
+    font-size: 25px;
+    overflow: hidden;
+    display: flex;
+    white-space: nowrap;
+    width: 1550px;
+    height: 38px;
+    color: rgba(0, 0, 0, 0);
+    animation: loop1 36s linear infinite;
+  }
+  .bg-catch10-1 {
+    font-weight: bold;
+    text-align: left;
+    font-size: 25px;
+    overflow: hidden;
+    display: flex;
+    white-space: nowrap;
+    width: 1550px;
+    height: 38px;
+    color: rgba(0, 0, 0, 0);
+    margin: -38px 0 0 0;
+    animation: loop1 36s -18s linear infinite;
+  }
+  .bg-catch11 {
+    font-weight: bold;
+    text-align: left;
+    font-size: 25px;
+    overflow: hidden;
+    display: flex;
+    white-space: nowrap;
+    width: 1550px;
+    height: 38px;
+    color: rgba(0, 0, 0, 0);
+    animation: loop1 40s linear infinite;
+  }
+  .bg-catch11-1 {
+    font-weight: bold;
+    text-align: left;
+    font-size: 25px;
+    overflow: hidden;
+    display: flex;
+    white-space: nowrap;
+    width: 1550px;
+    height: 38px;
+    color: rgba(0, 0, 0, 0);
+    margin: -38px 0 0 0;
+    animation: loop1 40s -20s linear infinite;
+  }
+  .bg-catch12 {
+    font-weight: bold;
+    text-align: left;
+    font-size: 25px;
+    overflow: hidden;
+    display: flex;
+    white-space: nowrap;
+    width: 1550px;
+    height: 38px;
+    color: rgba(0, 0, 0, 0);
+    animation: loop1 24s linear infinite;
+  }
+  .bg-catch12-1 {
+    font-weight: bold;
+    text-align: left;
+    font-size: 25px;
+    overflow: hidden;
+    display: flex;
+    white-space: nowrap;
+    width: 1550px;
+    height: 38px;
+    color: rgba(0, 0, 0, 0);
+    margin: -38px 0 0 0;
+    animation: loop1 24s -12s linear infinite;
+  }
+  .bg-catch13 {
+    font-weight: bold;
+    text-align: left;
+    font-size: 25px;
+    overflow: hidden;
+    display: flex;
+    white-space: nowrap;
+    width: 1550px;
+    height: 38px;
+    color: rgba(0, 0, 0, 0);
+    animation: loop1 38s linear infinite;
+  }
+  .bg-catch13-1 {
+    font-weight: bold;
+    text-align: left;
+    font-size: 25px;
+    overflow: hidden;
+    display: flex;
+    white-space: nowrap;
+    width: 1550px;
+    height: 38px;
+    color: rgba(0, 0, 0, 0);
+    margin: -38px 0 0 0;
+    animation: loop1 38s -19s linear infinite;
+  }
+  .bg-catch14 {
+    font-weight: bold;
+    text-align: left;
+    font-size: 25px;
+    overflow: hidden;
+    display: flex;
+    white-space: nowrap;
+    width: 1550px;
+    height: 38px;
+    color: rgba(0, 0, 0, 0);
+    animation: loop1 54s linear infinite;
+  }
+  .bg-catch14-1 {
+    font-weight: bold;
+    text-align: left;
+    font-size: 25px;
+    overflow: hidden;
+    display: flex;
+    white-space: nowrap;
+    width: 1550px;
+    height: 38px;
+    color: rgba(0, 0, 0, 0);
+    margin: -38px 0 0 0;
+    animation: loop1 54s -27s linear infinite;
+  }
+  .bg-catch15 {
+    font-weight: bold;
+    text-align: left;
+    font-size: 25px;
+    overflow: hidden;
+    display: flex;
+    white-space: nowrap;
+    width: 1550px;
+    height: 38px;
+    color: rgba(0, 0, 0, 0);
+    animation: loop1 60s linear infinite;
+  }
+  .bg-catch15-1 {
+    font-weight: bold;
+    text-align: left;
+    font-size: 25px;
+    overflow: hidden;
+    display: flex;
+    white-space: nowrap;
+    width: 1550px;
+    height: 38px;
+    color: rgba(0, 0, 0, 0);
+    margin: -38px 0 0 0;
+    animation: loop1 60s -30s linear infinite;
+  }
+  .bg-catch16 {
+    font-weight: bold;
+    text-align: left;
+    font-size: 25px;
+    overflow: hidden;
+    display: flex;
+    white-space: nowrap;
+    width: 1550px;
+    height: 38px;
+    color: rgba(0, 0, 0, 0);
+    animation: loop1 70s linear infinite;
+  }
+  .bg-catch16-1 {
+    font-weight: bold;
+    text-align: left;
+    font-size: 25px;
+    overflow: hidden;
+    display: flex;
+    white-space: nowrap;
+    width: 1550px;
+    height: 38px;
+    color: rgba(0, 0, 0, 0);
+    margin: -38px 0 0 0;
+    animation: loop1 70s -35s linear infinite;
+  }
+  .bg-catch17 {
+    font-weight: bold;
+    text-align: left;
+    font-size: 25px;
+    overflow: hidden;
+    display: flex;
+    white-space: nowrap;
+    width: 1550px;
+    height: 38px;
+    color: rgba(0, 0, 0, 0);
+    animation: loop1 20s linear infinite;
+  }
+  .bg-catch17-1 {
+    font-weight: bold;
+    text-align: left;
+    font-size: 25px;
+    overflow: hidden;
+    display: flex;
+    white-space: nowrap;
+    width: 1550px;
+    height: 38px;
+    color: rgba(0, 0, 0, 0);
+    margin: -38px 0 0 0;
+    animation: loop1 20s -10s linear infinite;
+  }
+  .bg-catch18 {
+    font-weight: bold;
+    text-align: left;
+    font-size: 25px;
+    overflow: hidden;
+    display: flex;
+    white-space: nowrap;
+    width: 1550px;
+    height: 38px;
+    color: rgba(0, 0, 0, 0);
+    animation: loop1 90s linear infinite;
+  }
+  .bg-catch18-1 {
+    font-weight: bold;
+    text-align: left;
+    font-size: 25px;
+    overflow: hidden;
+    display: flex;
+    white-space: nowrap;
+    width: 1550px;
+    height: 38px;
+    color: rgba(0, 0, 0, 0);
+    margin: -38px 0 0 0;
+    animation: loop1 90s -45s linear infinite;
+  }
+  .bg-catch19 {
+    font-weight: bold;
+    text-align: left;
+    font-size: 25px;
+    overflow: hidden;
+    display: flex;
+    white-space: nowrap;
+    width: 1550px;
+    height: 38px;
+    color: rgba(0, 0, 0, 0);
+    animation: loop1 66s linear infinite;
+  }
+  .bg-catch19-1 {
+    font-weight: bold;
+    text-align: left;
+    font-size: 25px;
+    overflow: hidden;
+    display: flex;
+    white-space: nowrap;
+    width: 1550px;
+    height: 38px;
+    color: rgba(0, 0, 0, 0);
+    margin: -38px 0 0 0;
+    animation: loop1 66s -33s linear infinite;
+  }
+  .bg-catch20 {
+    font-weight: bold;
+    text-align: left;
+    font-size: 25px;
+    overflow: hidden;
+    display: flex;
+    white-space: nowrap;
+    width: 1550px;
+    height: 38px;
+    color: rgba(0, 0, 0, 0);
+    animation: loop1 42s linear infinite;
+  }
+  .bg-catch20-1 {
+    font-weight: bold;
+    text-align: left;
+    font-size: 25px;
+    overflow: hidden;
+    display: flex;
+    white-space: nowrap;
+    width: 1550px;
+    height: 38px;
+    color: rgba(0, 0, 0, 0);
+    margin: -38px 0 0 0;
+    animation: loop1 42s -21s linear infinite;
+  }
+  .bg-catch21 {
+    font-weight: bold;
+    text-align: left;
+    font-size: 25px;
+    overflow: hidden;
+    display: flex;
+    white-space: nowrap;
+    width: 1550px;
+    height: 38px;
+    color: rgba(0, 0, 0, 0);
+    animation: loop1 50s linear infinite;
+  }
+  .bg-catch21-1 {
+    font-weight: bold;
+    text-align: left;
+    font-size: 25px;
+    overflow: hidden;
+    display: flex;
+    white-space: nowrap;
+    width: 1550px;
+    height: 38px;
+    color: rgba(0, 0, 0, 0);
+    margin: -38px 0 0 0;
+    animation: loop1 50s -25s linear infinite;
+  }
+  .bg-catch23 {
+    font-weight: bold;
+    text-align: left;
+    font-size: 25px;
+    overflow: hidden;
+    display: flex;
+    white-space: nowrap;
+    width: 1550px;
+    height: 38px;
+    color: rgba(0, 0, 0, 0);
+    animation: loop1 40s linear infinite;
+  }
+  .bg-catch23-1 {
+    font-weight: bold;
+    text-align: left;
+    font-size: 25px;
+    overflow: hidden;
+    display: flex;
+    white-space: nowrap;
+    width: 1550px;
+    height: 38px;
+    color: rgba(0, 0, 0, 0);
+    margin: -38px 0 0 0;
+    animation: loop1 40s -20s linear infinite;
+  }
+  .bg-catch24 {
+    font-weight: bold;
+    text-align: left;
+    font-size: 25px;
+    overflow: hidden;
+    display: flex;
+    white-space: nowrap;
+    width: 1550px;
+    height: 38px;
+    color: rgba(0, 0, 0, 0);
+    animation: loop1 30s linear infinite;
+  }
+  .bg-catch24-1 {
+    font-weight: bold;
+    text-align: left;
+    font-size: 25px;
+    overflow: hidden;
+    display: flex;
+    white-space: nowrap;
+    width: 1550px;
+    height: 38px;
+    color: rgba(0, 0, 0, 0);
+    margin: -38px 0 0 0;
+    animation: loop1 30s -15s linear infinite;
+  }
+  .bg-catch25 {
+    font-weight: bold;
+    text-align: left;
+    font-size: 25px;
+    overflow: hidden;
+    display: flex;
+    white-space: nowrap;
+    width: 1550px;
+    height: 38px;
+    color: rgba(0, 0, 0, 0);
+    animation: loop1 34s linear infinite;
+  }
+  .bg-catch25-1 {
+    font-weight: bold;
+    text-align: left;
+    font-size: 25px;
+    overflow: hidden;
+    display: flex;
+    white-space: nowrap;
+    width: 1550px;
+    height: 38px;
+    color: rgba(0, 0, 0, 0);
+    margin: -38px 0 0 0;
+    animation: loop1 34s -17s linear infinite;
+  }
+  .bg-catch26 {
+    font-weight: bold;
+    text-align: left;
+    font-size: 25px;
+    overflow: hidden;
+    display: flex;
+    white-space: nowrap;
+    width: 1550px;
+    height: 38px;
+    color: rgba(0, 0, 0, 0);
+    animation: loop1 44s linear infinite;
+  }
+  .bg-catch26-1 {
+    font-weight: bold;
+    text-align: left;
+    font-size: 25px;
+    overflow: hidden;
+    display: flex;
+    white-space: nowrap;
+    width: 1550px;
+    height: 38px;
+    color: rgba(0, 0, 0, 0);
+    margin: -38px 0 0 0;
+    animation: loop1 44s -22s linear infinite;
+  }
+  .bg-catch27 {
+    font-weight: bold;
+    text-align: left;
+    font-size: 25px;
+    overflow: hidden;
+    display: flex;
+    white-space: nowrap;
+    width: 1550px;
+    height: 38px;
+    color: rgba(0, 0, 0, 0);
+    animation: loop1 28s linear infinite;
+  }
+  .bg-catch27-1 {
+    font-weight: bold;
+    text-align: left;
+    font-size: 25px;
+    overflow: hidden;
+    display: flex;
+    white-space: nowrap;
+    width: 1550px;
+    height: 38px;
+    color: rgba(0, 0, 0, 0);
+    margin: -38px 0 0 0;
+    animation: loop1 28s -14s linear infinite;
+  }
+  .bg-catch28 {
+    font-weight: bold;
+    text-align: left;
+    font-size: 25px;
+    overflow: hidden;
+    display: flex;
+    white-space: nowrap;
+    width: 1550px;
+    height: 38px;
+    color: rgba(0, 0, 0, 0);
+    animation: loop1 50s linear infinite;
+  }
+  .bg-catch28-1 {
+    font-weight: bold;
+    text-align: left;
+    font-size: 25px;
+    overflow: hidden;
+    display: flex;
+    white-space: nowrap;
+    width: 1550px;
+    height: 38px;
+    color: rgba(0, 0, 0, 0);
+    margin: -38px 0 0 0;
+    animation: loop1 50s -25s linear infinite;
+  }
+  .bg-catch29 {
+    font-weight: bold;
+    text-align: left;
+    font-size: 25px;
+    overflow: hidden;
+    display: flex;
+    white-space: nowrap;
+    width: 1550px;
+    height: 38px;
+    color: rgba(0, 0, 0, 0);
+    animation: loop1 48s linear infinite;
+  }
+  .bg-catch29-1 {
+    font-weight: bold;
+    text-align: left;
+    font-size: 25px;
+    overflow: hidden;
+    display: flex;
+    white-space: nowrap;
+    width: 1550px;
+    height: 38px;
+    color: rgba(0, 0, 0, 0);
+    margin: -38px 0 0 0;
+    animation: loop1 48s -24s linear infinite;
+  }
+  .bg-catch30 {
+    font-weight: bold;
+    text-align: left;
+    font-size: 25px;
+    overflow: hidden;
+    display: flex;
+    white-space: nowrap;
+    width: 1550px;
+    height: 38px;
+    color: rgba(0, 0, 0, 0);
+    animation: loop1 36s linear infinite;
+  }
+  .bg-catch30-1 {
+    font-weight: bold;
+    text-align: left;
+    font-size: 25px;
+    overflow: hidden;
+    display: flex;
+    white-space: nowrap;
+    width: 1550px;
+    height: 38px;
+    color: rgba(0, 0, 0, 0);
+    margin: -38px 0 0 0;
+    animation: loop1 36s -18s linear infinite;
+  }
+  .bg-catch31 {
+    font-weight: bold;
+    text-align: left;
+    font-size: 25px;
+    overflow: hidden;
+    display: flex;
+    white-space: nowrap;
+    width: 1550px;
+    height: 38px;
+    color: rgba(0, 0, 0, 0);
+    animation: loop1 30s linear infinite;
+  }
+  .bg-catch31-1 {
+    font-weight: bold;
+    text-align: left;
+    font-size: 25px;
+    overflow: hidden;
+    display: flex;
+    white-space: nowrap;
+    width: 1550px;
+    height: 38px;
+    color: rgba(0, 0, 0, 0);
+    margin: -38px 0 0 0;
+    animation: loop1 30s -15s linear infinite;
+  }
+  .bg-catch32 {
+    font-weight: bold;
+    text-align: left;
+    font-size: 25px;
+    overflow: hidden;
+    display: flex;
+    white-space: nowrap;
+    width: 1550px;
+    height: 38px;
+    color: rgba(0, 0, 0, 0);
+    animation: loop1 36s linear infinite;
+  }
+  .bg-catch32-1 {
+    font-weight: bold;
+    text-align: left;
+    font-size: 25px;
+    overflow: hidden;
+    display: flex;
+    white-space: nowrap;
+    width: 1550px;
+    height: 38px;
+    color: rgba(0, 0, 0, 0);
+    margin: -38px 0 0 0;
+    animation: loop1 36s -18s linear infinite;
+  }
+  .bg-catch33 {
+    font-weight: bold;
+    text-align: left;
+    font-size: 25px;
+    overflow: hidden;
+    display: flex;
+    white-space: nowrap;
+    width: 1550px;
+    height: 38px;
+    color: rgba(0, 0, 0, 0);
+    animation: loop1 40s linear infinite;
+  }
+  .bg-catch33-1 {
+    font-weight: bold;
+    text-align: left;
+    font-size: 25px;
+    overflow: hidden;
+    display: flex;
+    white-space: nowrap;
+    width: 1550px;
+    height: 38px;
+    color: rgba(0, 0, 0, 0);
+    margin: -38px 0 0 0;
+    animation: loop1 40s -20s linear infinite;
+  }
+  .bg-catch34 {
+    font-weight: bold;
+    text-align: left;
+    font-size: 25px;
+    overflow: hidden;
+    display: flex;
+    white-space: nowrap;
+    width: 1550px;
+    height: 38px;
+    color: rgba(0, 0, 0, 0);
+    animation: loop1 24s linear infinite;
+  }
+  .bg-catch34-1 {
+    font-weight: bold;
+    text-align: left;
+    font-size: 25px;
+    overflow: hidden;
+    display: flex;
+    white-space: nowrap;
+    width: 1550px;
+    height: 38px;
+    color: rgba(0, 0, 0, 0);
+    margin: -38px 0 0 0;
+    animation: loop1 24s -12s linear infinite;
+  }
+  .bg-catch35 {
+    font-weight: bold;
+    text-align: left;
+    font-size: 25px;
+    overflow: hidden;
+    display: flex;
+    white-space: nowrap;
+    width: 1550px;
+    height: 38px;
+    color: rgba(0, 0, 0, 0);
+    animation: loop1 38s linear infinite;
+  }
+  .bg-catch35-1 {
+    font-weight: bold;
+    text-align: left;
+    font-size: 25px;
+    overflow: hidden;
+    display: flex;
+    white-space: nowrap;
+    width: 1550px;
+    height: 38px;
+    color: rgba(0, 0, 0, 0);
+    margin: -38px 0 0 0;
+    animation: loop1 38s -19s linear infinite;
+  }
+  .bg-catch36 {
+    font-weight: bold;
+    text-align: left;
+    font-size: 25px;
+    overflow: hidden;
+    display: flex;
+    white-space: nowrap;
+    width: 1550px;
+    height: 38px;
+    color: rgba(0, 0, 0, 0);
+    animation: loop1 54s linear infinite;
+  }
+  .bg-catch36-1 {
+    font-weight: bold;
+    text-align: left;
+    font-size: 25px;
+    overflow: hidden;
+    display: flex;
+    white-space: nowrap;
+    width: 1550px;
+    height: 38px;
+    color: rgba(0, 0, 0, 0);
+    margin: -38px 0 0 0;
+    animation: loop1 54s -27s linear infinite;
+  }
+  .bg-catch37 {
+    font-weight: bold;
+    text-align: left;
+    font-size: 25px;
+    overflow: hidden;
+    display: flex;
+    white-space: nowrap;
+    width: 1550px;
+    height: 38px;
+    color: rgba(0, 0, 0, 0);
+    animation: loop1 60s linear infinite;
+  }
+  .bg-catch37-1 {
+    font-weight: bold;
+    text-align: left;
+    font-size: 25px;
+    overflow: hidden;
+    display: flex;
+    white-space: nowrap;
+    width: 1550px;
+    height: 38px;
+    color: rgba(0, 0, 0, 0);
+    margin: -38px 0 0 0;
+    animation: loop1 60s -30s linear infinite;
+  }
+  .bg-catch38 {
+    font-weight: bold;
+    text-align: left;
+    font-size: 25px;
+    overflow: hidden;
+    display: flex;
+    white-space: nowrap;
+    width: 1550px;
+    height: 38px;
+    color: rgba(0, 0, 0, 0);
+    animation: loop1 70s linear infinite;
+  }
+  .bg-catch38-1 {
+    font-weight: bold;
+    text-align: left;
+    font-size: 25px;
+    overflow: hidden;
+    display: flex;
+    white-space: nowrap;
+    width: 1550px;
+    height: 38px;
+    color: rgba(0, 0, 0, 0);
+    margin: -38px 0 0 0;
+    animation: loop1 70s -35s linear infinite;
+  }
+  .bg-catch39 {
+    font-weight: bold;
+    text-align: left;
+    font-size: 25px;
+    overflow: hidden;
+    display: flex;
+    white-space: nowrap;
+    width: 1550px;
+    height: 38px;
+    color: rgba(0, 0, 0, 0);
+    animation: loop1 20s linear infinite;
+  }
+  .bg-catch39-1 {
+    font-weight: bold;
+    text-align: left;
+    font-size: 25px;
+    overflow: hidden;
+    display: flex;
+    white-space: nowrap;
+    width: 1550px;
+    height: 38px;
+    color: rgba(0, 0, 0, 0);
+    margin: -38px 0 0 0;
+    animation: loop1 20s -10s linear infinite;
+  }
+  .bg-catch40 {
+    font-weight: bold;
+    text-align: left;
+    font-size: 25px;
+    overflow: hidden;
+    display: flex;
+    white-space: nowrap;
+    width: 1550px;
+    height: 38px;
+    color: rgba(0, 0, 0, 0);
+    animation: loop1 90s linear infinite;
+  }
+  .bg-catch40-1 {
+    font-weight: bold;
+    text-align: left;
+    font-size: 25px;
+    overflow: hidden;
+    display: flex;
+    white-space: nowrap;
+    width: 1550px;
+    height: 38px;
+    color: rgba(0, 0, 0, 0);
+    margin: -38px 0 0 0;
+    animation: loop1 90s -45s linear infinite;
+  }
+  .bg-catch41 {
+    font-weight: bold;
+    text-align: left;
+    font-size: 25px;
+    overflow: hidden;
+    display: flex;
+    white-space: nowrap;
+    width: 1550px;
+    height: 38px;
+    color: rgba(0, 0, 0, 0);
+    animation: loop1 66s linear infinite;
+  }
+  .bg-catch41-1 {
+    font-weight: bold;
+    text-align: left;
+    font-size: 25px;
+    overflow: hidden;
+    display: flex;
+    white-space: nowrap;
+    width: 1550px;
+    height: 38px;
+    color: rgba(0, 0, 0, 0);
+    margin: -38px 0 0 0;
+    animation: loop1 66s -33s linear infinite;
+  }
+  .bg-catch42 {
+    font-weight: bold;
+    text-align: left;
+    font-size: 25px;
+    overflow: hidden;
+    display: flex;
+    white-space: nowrap;
+    width: 1550px;
+    height: 38px;
+    color: rgba(0, 0, 0, 0);
+    animation: loop1 42s linear infinite;
+  }
+  .bg-catch42-1 {
+    font-weight: bold;
+    text-align: left;
+    font-size: 25px;
+    overflow: hidden;
+    display: flex;
+    white-space: nowrap;
+    width: 1550px;
+    height: 38px;
+    color: rgba(0, 0, 0, 0);
+    margin: -38px 0 0 0;
+    animation: loop1 42s -21s linear infinite;
+  }
+  .nike-area {
+    position: absolute;
+    top: 188px;
+    left: 37px;
+    height: 132px;
+    width: 85%;
+  }
+  .nike-area .introduction-nike img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 390px;
+    z-index: 10;
+  }
+  .nike-area .workshop-nike-button {
+    top: 70px;
+    left: 7px;
+    position: absolute;
+    font-size: 15px;
+    font-weight: bold;
+    color: #1a1818;
+    background-color: rgb(255, 255, 255);
+    height: 45px;
+    width: 100px;
+    padding: 5px 10px;
+    text-align: center;
+    border: 3px solid rgba(19, 193, 199, 0.726);
+    box-shadow: 0 5px 0 rgba(19, 193, 199, 0.726);
+    border-radius: 6px;
+    display: inline-block;
+    transition: 0.3s;
+    z-index: 11;
+  }
+  .nike-area .workshop-nike-button:hover {
+    transform: translateY(5px);
+    box-shadow: 0 0 0 rgba(19, 193, 199, 0.726);
+  }
+  .adidas-area {
+    position: absolute;
+    top: 333px;
+    left: 37px;
+    height: 132px;
+    width: 85%;
+  }
+  .adidas-area .introduction-adidas img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 390px;
+    z-index: 10;
+  }
+  .adidas-area .workshop-adidas-button {
+    top: 70px;
+    left: 7px;
+    position: absolute;
+    font-size: 15px;
+    font-weight: bold;
+    color: #1a1818;
+    background-color: rgb(255, 255, 255);
+    height: 45px;
+    width: 100px;
+    padding: 5px 10px;
+    text-align: center;
+    border: 3px solid rgba(19, 193, 199, 0.726);
+    box-shadow: 0 5px 0 rgba(19, 193, 199, 0.726);
+    border-radius: 6px;
+    display: inline-block;
+    transition: 0.3s;
+    z-index: 11;
+  }
+  .adidas-area .workshop-adidas-button:hover {
+    transform: translateY(5px);
+    box-shadow: 0 0 0 rgba(19, 193, 199, 0.726);
+  }
+  .vans-area {
+    position: absolute;
+    top: 478px;
+    left: 37px;
+    height: 132px;
+    width: 85%;
+  }
+  .vans-area .introduction-vans img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 390px;
+    z-index: 10;
+  }
+  .vans-area .workshop-vans-button {
+    top: 70px;
+    left: 7px;
+    position: absolute;
+    font-size: 15px;
+    font-weight: bold;
+    color: #1a1818;
+    background-color: rgb(255, 255, 255);
+    height: 45px;
+    width: 100px;
+    padding: 5px 10px;
+    text-align: center;
+    border: 3px solid rgba(19, 193, 199, 0.726);
+    box-shadow: 0 5px 0 rgba(19, 193, 199, 0.726);
+    border-radius: 6px;
+    display: inline-block;
+    transition: 0.3s;
+    z-index: 11;
+  }
+  .vans-area .workshop-vans-button:hover {
+    transform: translateY(5px);
+    box-shadow: 0 0 0 rgba(19, 193, 199, 0.726);
+  }
+  .converse-area {
+    position: absolute;
+    top: 623px;
+    left: 37px;
+    height: 132px;
+    width: 85%;
+  }
+  .converse-area .introduction-converse img {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 390px;
+    z-index: 10;
+  }
+  .converse-area .workshop-converse-button {
+    top: 70px;
+    left: 7px;
+    position: absolute;
+    font-size: 15px;
+    font-weight: bold;
+    color: #1a1818;
+    background-color: rgb(255, 255, 255);
+    height: 45px;
+    width: 100px;
+    padding: 5px 10px;
+    text-align: center;
+    border: 3px solid rgba(19, 193, 199, 0.726);
+    box-shadow: 0 5px 0 rgba(19, 193, 199, 0.726);
+    border-radius: 6px;
+    display: inline-block;
+    transition: 0.3s;
+    z-index: 11;
+  }
+  .converse-area .workshop-converse-button:hover {
+    transform: translateY(5px);
+    box-shadow: 0 0 0 rgba(19, 193, 199, 0.726);
+  }
+  .workshop-vans-button {
+    bottom: 9px;
+    right: 53px;
+    position: absolute;
+    font-size: 15px;
+    font-weight: bold;
+    color: #1a1818;
+    background-color: rgb(255, 255, 255);
+    height: 45px;
+    width: 100px;
+    padding: 5px 10px;
+    text-align: center;
+    border: 3px solid rgba(19, 193, 199, 0.726);
+    box-shadow: 0 5px 0 rgba(19, 193, 199, 0.726);
+    border-radius: 6px;
+    display: inline-block;
+    transition: 0.3s;
+    z-index: 11;
+  }
+  .workshop-vans-button:hover {
+    transform: translateY(5px);
+    box-shadow: 0 0 0 rgba(19, 193, 199, 0.726);
+  }
+  .workshop-converse-button {
+    top: 261px;
+    left: 74px;
+    position: absolute;
+    font-size: 15px;
+    font-weight: bold;
+    color: #1a1818;
+    background-color: rgb(255, 255, 255);
+    height: 45px;
+    width: 100px;
+    padding: 5px 10px;
+    text-align: center;
+    border: 3px solid rgba(19, 193, 199, 0.726);
+    box-shadow: 0 5px 0 rgba(19, 193, 199, 0.726);
+    border-radius: 6px;
+    display: inline-block;
+    transition: 0.3s;
+    z-index: 11;
+  }
+  .workshop-converse-button:hover {
+    transform: translateY(5px);
+    box-shadow: 0 0 0 rgba(19, 193, 199, 0.726);
+  }
+  .bg-catch .nike1 {
+    transition: 1s;
+  }
+  .nike1:hover {
+    font-size: 25px;
+    font-weight: bold;
+    color: #ff0000;
+    text-shadow: 0 0 120px #ff0000;
+    transition: 0s;
+  }
+  .bg-catch .vans1 {
+    transition: 1s;
+  }
+  .vans1:hover {
+    font-size: 25px;
+    font-weight: bold;
+    color: #007fff;
+    text-shadow: 0 0 120px #007fff;
+    transition: 0s;
+  }
+  .bg-catch .adidas1 {
+    transition: 1s;
+  }
+  .adidas1:hover {
+    font-size: 25px;
+    font-weight: bold;
+    color: #ff007f;
+    text-shadow: 0 0 120px #ff007f;
+    transition: 0s;
+  }
+  .bg-catch .converse1 {
+    transition: 1s;
+  }
+  .converse1:hover {
+    font-size: 25px;
+    font-weight: bold;
+    color: #00ffff;
+    text-shadow: 0 0 120px #00ffff;
+    transition: 0s;
+  }
+  @keyframes loop1 {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  .passing-area {
+    position: absolute;
+    top: 771px;
+    left: 0;
+    height: 80vh;
+    width: 100vw;
+    margin: 0 auto;
+  }
+  .passing-area .passing-img img {
+    height: 80vh;
+    width: 100vw;
+    max-width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    align-items: center;
+  }
+  .passing-text-box {
+    position: relative;
+    top: -394px;
+    left: 54px;
+    background-color: rgba(255, 255, 255, 0.534);
+    background-size: 300px 500px;
+    padding: 13px 20px;
+    border-radius: 20px;
+    height: 215px;
+    width: 298px;
+  }
+  .passing-text {
+    position: absolute;
+    top: 66px;
+    left: 66px;
+    font-size: 18px;
+    font-weight: bold;
+    height: 100px;
+    width: 301px;
+    color: #1a1818;
+    line-height: 1;
+    z-index: 100;
+  }
+  .price {
+    height: 97vh;
+    width: 100vw;
+    margin: 0 auto;
+    max-width: 100%;
+    background-color: rgb(75, 71, 71);
+  }
+  .price-list {
+    padding: 10px 0px;
+    height: 93px;
+    line-height: 3;
+  }
+  .price-list h1 {
+    height: 100px;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+  }
+  .box1 {
+    top: 2270px;
+    left: 20px;
+    height: 10px;
+    width: 96px;
+    position: absolute;
+    border: 1px solid;
+    border-top-color: rgb(255, 255, 255);
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    z-index: 10;
+  }
+  .box3 {
+    top: 2758px;
+    left: 70px;
+    height: 10px;
+    width: 270px;
+    position: absolute;
+    border: 1px solid;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-bottom-color: rgb(255, 255, 255);
+    border-right-color: transparent;
+    z-index: 10;
+  }
+  .box5 {
+    top: 2270px;
+    right: 20px;
+    height: 10px;
+    width: 96px;
+    position: absolute;
+    border: 1px solid;
+    border-top-color: rgb(255, 255, 255);
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    z-index: 10;
+  }
+  .paint-area {
+    height: 143px;
+    width: 78vw;
+    margin: 0 auto;
+    line-height: 2;
+  }
+  .paint-area h2 {
+    display: flex;
+    float: none;
+    font-weight: bold;
+    margin: 0 auto;
+    padding-right: 50px;
+    color: rgb(255, 255, 255);
+  }
+  .paint-area p {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 21px;
+    margin-left: 70px;
+    line-height: 1.5;
+  }
+  .Sketch-area {
+    height: 143px;
+    width: 78vw;
+    margin: 0 auto;
+    line-height: 2;
+  }
+  .Sketch-area h2 {
+    display: flex;
+    float: none;
+    font-weight: bold;
+    margin: 0 auto;
+    padding-right: 50px;
+    color: rgb(255, 255, 255);
+  }
+  .Sketch-area p {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 21px;
+    margin-left: 70px;
+    line-height: 1.5;
+  }
+  .manual-area {
+    height: 143px;
+    width: 78vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    line-height: 2;
+  }
+  .manual-area p {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 14px;
+    margin-left: 50px;
+  }
+  .manual {
+    height: 112vh;
+    width: 100vw;
+    margin: 0 auto;
+    max-width: 100%;
+    background-color: rgb(75, 71, 71);
+  }
+  .box6 {
+    top: 2802px;
+    left: 20px;
+    height: 10px;
+    width: 96px;
+    position: absolute;
+    border: 1px solid;
+    border-top-color: rgb(255, 255, 255);
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    z-index: 10;
+  }
+  .box8 {
+    top: 3347px;
+    left: 70px;
+    height: 10px;
+    width: 270px;
+    position: absolute;
+    border: 1px solid;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-bottom-color: rgb(255, 255, 255);
+    border-right-color: transparent;
+    z-index: 10;
+  }
+  .box10 {
+    top: 2802px;
+    right: 20px;
+    height: 10px;
+    width: 96px;
+    position: absolute;
+    border: 1px solid;
+    border-top-color: rgb(255, 255, 255);
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    z-index: 10;
+  }
+  .manual-title {
+    padding: 7px 30px;
+    height: 90px;
+    margin: 0 auto;
+    line-height: 3;
+  }
+  .manual-title h1 {
+    text-align: center;
+    margin-top: 0 auto;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+  }
+  .manual-text {
+    height: 100px;
+    width: 100vw;
+    margin: 0 auto;
+    line-height: 1.5;
+  }
+  .manual-text h2 {
+    display: flex;
+    padding: 13px 30px;
+    text-align: center;
+    justify-content: center;
+    float: none;
+    font-weight: bold;
+    height: 75px;
+    margin: 0 auto;
+    color: rgb(255, 255, 255);
+  }
+  .manual-p-text1 {
+    height: 76vh;
+    width: 100vw;
+    margin: 0 0 0 0;
+    line-height: 1.5;
+    color: rgb(255, 255, 255);
+  }
+  .manual-p-text1 li {
+    margin-left: 1.5em;
+    padding-left: 0.5em;
+  }
+  .manual-p-text1 li::marker {
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+  }
+  .privacyPolicy {
+    height: 80vh;
+    width: 100vw;
+    margin: 0 auto;
+    max-width: 100%;
+    background-color: rgb(75, 71, 71);
+  }
+  .box11 {
+    top: 3398px;
+    left: 20px;
+    height: 10px;
+    width: 68px;
+    position: absolute;
+    border: 1px solid;
+    border-top-color: rgb(255, 255, 255);
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    z-index: 10;
+  }
+  .box13 {
+    top: 3617px;
+    left: 70px;
+    height: 10px;
+    width: 270px;
+    position: absolute;
+    border: 1px solid;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-bottom-color: rgb(255, 255, 255);
+    border-right-color: transparent;
+    z-index: 10;
+  }
+  .box15 {
+    top: 3398px;
+    right: 20px;
+    height: 10px;
+    width: 68px;
+    position: absolute;
+    border: 1px solid;
+    border-top-color: rgb(255, 255, 255);
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    z-index: 10;
+  }
+  .box16 {
+    position: absolute;
+    top: 5805px;
+    right: 618px;
+    height: 3px;
+    width: 120px;
+    border-bottom-color: rgb(255, 255, 255);
+    border: 2px solid;
+  }
+  .privacyPolicy-title h1 {
+    display: flex;
+    padding: 0 30px;
+    text-align: center;
+    justify-content: center;
+    float: none;
+    font-weight: bold;
+    height: 80px;
+    margin: 0 auto;
+    color: rgb(255, 255, 255);
+  }
+  .privacyPolicy-text {
+    height: 226px;
+    width: 82vw;
+    margin: 0 auto;
+  }
+  .description {
+    overflow-y: scroll;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+    background-color: #fff;
+    line-height: 2;
+  }
+  .description h3 {
+    font-size: 20px;
+  }
+  .description h4 {
+    font-style: 17px;
+  }
+  .description p {
+    font-style: 13px;
+  }
+  #pp-text {
+    display: none;
+  }
+  #pp-text:checked ~ .description {
+    display: block;
+  }
+  .contact2 {
+    height: 100px;
+    width: 100vw;
+    margin: 0 auto;
+  }
+  .contact2 .contact2-title h1 {
+    display: flex;
+    padding: 34px 30px;
+    text-align: center;
+    justify-content: center;
+    font-weight: bold;
+    height: 118px;
+    font-size: 30px;
+    margin: 0 auto;
+    color: rgb(255, 255, 255);
+  }
+  .contact2 .contact2-title h1 .kochira {
+    font-size: 30px;
+    color: #e96b6b;
+  }
+  .footer {
+    background: #1a1818;
+    padding: 2% 0 4% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 250px;
+    width: 100vw;
+  }
+  .footer-area {
+    height: 20%;
+    width: 100%;
+  }
+  .footer-area ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(255, 255, 255);
+  }
+  .footer-area ul li {
+    margin-left: 30px;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  .footer-area ul li a {
+    color: rgb(255, 255, 255);
+  }
+  .small {
+    bottom: 0;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    margin: 0 auto;
+    margin-top: 4%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+}/*# sourceMappingURL=custom_sp.css.map */
